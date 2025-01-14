@@ -10,6 +10,7 @@ def inform_about_operations():
         {"id": 615064591, "state": "CANCELED", "date": "2018-10-14T08:21:33.419441"},
     ]
 
+
 @pytest.fixture
 def inform_about_transactions():
     return [
