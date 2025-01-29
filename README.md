@@ -16,5 +16,6 @@ src/masks.py ................. 100%
 src/widget.py ................ 100%
 src/processing.py..............100%
 src/financial_transactions.py..100%
+src/external_api.py............100%
 total                           100%
 ```
