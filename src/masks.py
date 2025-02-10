@@ -3,6 +3,7 @@ import logging
 logging.basicConfig(level=logging.DEBUG,
                     format='%(asctime)s - %(filename)s - %(levelname)s - %(message)s',
                     filename='../logs/masks_log.log',
+                    encoding='utf-8' ,
                     filemode='w')
 
 mask_card_number_logger = logging.getLogger()

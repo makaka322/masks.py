@@ -7,6 +7,7 @@ logging.basicConfig(
     format="%(asctime)s - %(filename)s - %(levelname)s - %(message)s",
     filename="../logs/utils.log",
     filemode="w",
+    encoding='utf-8',
 )
 
 get_financial_transactions_logger = logging.getLogger()
@@ -27,3 +28,8 @@ def get_financial_transactions(path: str) -> list:
     except FileNotFoundError:
         get_financial_transactions_logger.error("Файл с транзакциями не найден")
         return []
+
+if __name__ == "__main__":
+    # Замените 'transactions.json' на путь к вашему JSON-файлу
+    transactions = get_financial_transactions("transactions.json")
+    print(transactions)  # Для проверки, выводим загруженные транзакции
