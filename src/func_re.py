@@ -4,9 +4,9 @@ from collections import Counter
 from src.financial_transactions import reading_csv_file, reading_excel_file
 from src.utils import get_financial_transactions
 
-json_file = get_financial_transactions('../data/operations.json')
-csv_file = reading_csv_file('../data/transactions.csv')
-excel_file = reading_excel_file('../data/transactions_excel.xlsx')
+json_file = get_financial_transactions(r'C:\Users\chiri\PycharmProjects\masks.py\data\data\operations.json')
+csv_file = reading_csv_file(r'C:\Users\chiri\PycharmProjects\masks.py\data\data\transactions.csv')
+excel_file = reading_excel_file(r'C:\Users\chiri\PycharmProjects\masks.py\data\transactions_excel.xlsx')
 
 
 def search_transactions(transactions: list[dict], search_string: str) -> list[dict]:
@@ -33,3 +33,4 @@ def get_count_transactions(transactions: list[dict], categories: list) -> dict:
             description.append(transaction["description"])
     counted = dict(Counter(description))
     return counted
+
