@@ -19,13 +19,7 @@ def filter_by_state(inform_about_operations: Iterable, state_id: str = "EXECUTED
     return new_list_operations
 
 
-print(filter_by_state(list_of_operations))
-
-
 def sort_by_date(inform_about_operations: Iterable, reverse: bool = True) -> Iterable:
     """Функция сортирующая операции по дате"""
     operations_sorted_date = sorted(inform_about_operations, key=lambda x: x["date"], reverse=reverse)
     return operations_sorted_date
-
-
-print(sort_by_date(list_of_operations))
